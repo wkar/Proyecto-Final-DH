@@ -1,0 +1,47 @@
+.pimg{
+	border:none;
+  float: left;
+	margin: 250px auto 80px 110px;
+	border: antiquewhite;
+}
+
+.pform{
+	padding:25px;
+	border:none;
+	margin:150px auto 80px 360px;
+	border-radius: 10px;
+	width: 50%;
+	box-shadow: 5px 5px 26px 0px rgba(166,166,166,1);
+	/*text-align: center;*/
+}
+
+.ptitulo{
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+	float: left;
+	padding:none;
+}
+
+.descripcion{
+
+	margin: 10px 5px 10px;
+}
+
+.ptext{
+	margin: 10px 5px 10px;
+	border: 2px solid gainsboro;
+}
+
+.penviar{
+	color:#745c5c;
+}
+
+.links{
+	text-decoration: none;
+}
+
+/*.pcat{
+
+	margin: 10px 5px 10px
+}*/

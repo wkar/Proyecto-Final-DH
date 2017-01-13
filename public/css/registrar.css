@@ -1,0 +1,124 @@
+.datos{
+  padding:25px;
+  border:none;
+  margin:0 auto 20px;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 5px 5px 26px 0px rgba(166,166,166,1);
+}
+
+h1{
+  text-align: center;
+  font-size: 4em;
+  margin-top: 200px;
+}
+
+.ID,
+.mail,
+.password,
+.passwordRepeat,
+.name,
+.apellido,
+.birthday{
+  text-align: center;
+  display:block;
+  margin: 10px auto;
+  border-radius: 2px;
+  width: 100%;
+  line-height: 25px;
+  border:2px solid rgba(128,128,128,0.28);
+}
+
+.mensajeReg{
+  padding: 10px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.registracionExitosa{
+  font-size: 1.4em;
+}
+
+.error{
+  color:red;
+  font-size: 1em;
+  text-align: left;
+}
+
+.susc-datos p{
+	display: block;
+}
+
+p{
+  margin:0;
+  font-size: 1.2em;
+}
+
+form p{
+  color:black;
+}
+
+label{
+  position: relative;
+  font-size: 1.7em;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.checks{
+  margin-top: 5px;
+  display: block;
+  float:left;
+}
+
+.susc-datos{
+  margin-left: 25px;
+  margin-top: 7px;
+}
+
+.susc{
+  overflow:hidden;
+}
+
+.susc-datos p{
+  text-align: left;
+  font-size: .9em;
+  padding: 2px;
+}
+
+h6{
+  margin: 0;
+  font-size: 1em;
+}
+
+.clear{
+  clear:both;
+}
+
+.suscripciones{
+  width: 80%;
+  margin: 10px auto;
+}
+
+.continuar-boton{
+  display:block;
+  margin:15px auto 30px;
+  font-size: 1.3em;
+  text-decoration: none;
+  color:inherit;
+  padding:5px;
+  border:1px solid rgba(128,128,128,0.68);
+}
+
+@media (min-width: 400px){
+    .continuar-boton{
+    width:40%;
+  }
+}
+
+@media (min-width: 800px) {
+  .datos{
+    width:50%;
+  }
+}

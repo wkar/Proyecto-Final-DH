@@ -1,0 +1,702 @@
+*{
+	box-sizing:border-box;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+
+body{
+	background-color: rgba(224, 224, 224, 0.19);
+	font-family: 'Montserrat', sans-serif;
+	margin:0;
+	font-size: 10px;
+}
+
+.link-nombre{
+	text-decoration: none;
+	color:inherit;
+}
+
+.mensaje{
+	position: fixed;
+	bottom: 0;
+	background-color: #11448780;
+	margin-left: 10px;
+	height: 70px;
+	width: 250px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	z-index: 1000;
+	font-size: 1.4em;
+}
+
+header img{
+	width:120px;
+	height:120px;
+	/*border-radius: 800px;*/
+	display:block;
+	margin-right: 10px;
+	margin-top:20px;
+}
+
+header{
+margin-bottom:20px;
+top: 0;
+margin: 0;
+}
+
+.titleProds{
+	width: 70%;
+	margin:190px auto 10px;
+}
+
+.form-crear{
+	max-width: 50%;
+	padding: 25px;
+  border: none;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 5px 5px 26px 0px rgba(166,166,166,1);
+}
+
+.crear-prod-nuevo{
+	margin: auto;
+	padding-bottom: 45%;
+	text-align: center;
+}
+
+.crear-prod-nuevo a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.contenedor-labels{
+	padding: 10px 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.label-100{
+	text-align: left;
+	position: relative;
+  font-size: 1.5em;
+  display: block;
+  width: 80%;
+  margin: auto;
+	padding: 15px;
+	border-bottom: 1px solid blue;
+}
+
+.label-100 input{
+	width: 100%;
+}
+
+.label-cat{
+	text-align: left;
+	position: relative;
+  font-size: 1.5em;
+  display: block;
+  width: 80%;
+  margin: auto;
+	padding: 15px;
+}
+
+.btn-crear{
+	position: relative;
+  font-size: 1.5em;
+  display: block;
+  width: 40%;
+  margin: 20px auto;
+	padding: 20px;
+	background: linear-gradient(rgba(4, 34, 76, 0.65), #04224c);
+	border-radius: 10px;
+	color: #fff;
+}
+
+.label-100 input{
+	padding: 10px;
+	font-size: 16px;
+}
+
+.label-100 textarea{
+	width: 100%;
+}
+
+.tit-crear{
+	margin-top: 160px;
+  text-align: center;
+}
+
+.link-nombre{
+	color:white;
+	text-transform: capitalize;
+}
+
+.search{
+	cursor: pointer;
+}
+
+.encabezado{
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.contenedor-header{
+	overflow:hidden;
+	height: auto;
+}
+form p{
+	display:none;
+}
+
+
+.contenedor-imagen-header{
+	margin-top:60px;
+	float:right;
+	width: 40%;
+	position:relative;
+	height: 200px;
+	padding:10px
+}
+
+.contenedor-imagen-header img{
+	margin-left:50%;
+	transform:translateX(-50%);
+}
+
+.contenedor-titulo-header{
+	height: 200px;
+	margin-top:60px;
+	text-align:center;
+	float:left;
+	width:58%;
+	padding:10px;
+}
+
+.descripcion-titulo{
+font-size: 1.2em;
+margin:0;
+}
+
+h1{
+	font-size: 3em;
+	margin-top:20px;
+}
+
+.encabezado{
+	text-align: left;
+	background-color: #04224c;
+	width:100%;
+	height:50px;
+	position:fixed;
+	top:0;
+	z-index: 10;
+}
+
+.busqueda{
+	float:left;
+	width:85%;
+}
+
+
+.busqueda input{
+	border:none;
+	margin-top:12.5px;
+	margin-left: 10px;
+	height:25px;
+	width:69%;
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+  background: linear-gradient(0deg, rgba(224,224,224,1) 0, rgba(255,255,255,1) 50%);
+
+}
+
+.busqueda button{
+	margin-top: 12.5px;
+	height:25px;
+	width:23%;
+	border-top-right-radius: 500px;
+	border-bottom-right-radius: 500px;
+	color:black;
+	background-color: white;
+	border:none;
+	font-family:  inherit;
+	padding: 0;
+}
+
+.boton-login, .boton-reg{
+	color:white;
+	text-decoration: none;
+	line-height: 50px;
+	margin-left:1.5%;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: .9em;
+	display: none;
+}
+
+.icono-menu{
+	position: absolute;
+	right:5%;
+	line-height: 50px;
+	font-size: 2em;
+	color:white;
+	text-decoration: none;
+}
+
+.desplegable-menu{
+	display:none;
+}
+
+.desplegable-menu ul{
+	padding:0;
+	margin:0;
+}
+
+.desplegable-menu ul li{
+	background-color: #04224c;
+	text-align: center;
+	padding:10px;
+	border-bottom: 2px solid white;
+}
+
+.desplegable-menu ul li:nth-child(1){
+	border-top: 2px solid white;
+}
+
+.desplegable-menu ul li{
+	background-color: #04224c;
+	text-align: center;
+	padding:10px;
+	border-bottom: 2px solid white;
+}
+
+.desplegable-menu a{
+	font-size: 1.5em;
+	text-decoration: none;
+	color:white;
+}
+
+.no-mobile{
+	display:none;
+}
+footer{
+	width: 100%;
+	background: linear-gradient(rgba(4, 34, 76, 0.65), #04224c);
+	color: white;
+	overflow: hidden;
+	padding:15px;
+}
+
+footer nav ul{
+	list-style:none;
+	padding:10px 0;
+	border-bottom: 2px solid black;
+	margin:0;
+}
+
+footer nav ul li{
+	display:inline-block;
+	width:30%;
+	text-align:center;
+	margin:0 1%;
+	padding:10px 0;
+}
+
+.btn-reg-desp, .btn-ingr-desp{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+.rutas{
+	display:none;
+}
+
+footer nav ul li:after{
+	content:"|";
+	margin-left: 10px;
+}
+footer nav ul li:before{
+	content:"|";
+	margin-right: 10px;
+}
+
+footer nav ul li a{
+	font-size: 1.2em;
+	vertical-align:middle;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:inherit;
+}
+
+textarea{
+	border:none;
+}
+
+.about{
+	padding:10px;
+	float:left;
+	width:60% !important;
+}
+
+.about p{
+	font-size: 1em;
+}
+
+.about h5, .media h5{
+	font-size: 1.3em; /* PREGUNTAR PORQUE SE ROMPE CUANDO AUMENTO EL TAMAÑO  - LO MISMO CON EL <P>*/
+	margin:0 0 10px;
+}
+
+.media{
+	padding: 10px;
+	float:right;
+	width:40% !important;
+}
+
+.media ul{
+	list-style:none;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 0;
+}
+
+.media ul li{
+	display:inline-block;
+	text-align:left;
+	margin: 0;
+}
+
+.media ul li a img{
+	width: 25px;
+	height: 25px;
+	border-radius:100px
+}
+
+.contacto{
+	border-top :2px solid black;
+	padding:30px;
+	overflow:hidden;
+	width: 100%;
+}
+
+.contacto-datos{
+	float:left;
+	width:50%;
+	position:relative;
+}
+
+.contacto-consulta{
+	float:right;
+	width: 50%;
+}
+
+.contacto label{
+	display:block;
+	margin:0 20px 2%;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.contenido{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.contenido-encabezado{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.categoria{
+	padding-bottom: 15px;
+	width:90%;
+	margin:0 auto 15px;
+	background-color: white;
+	border-radius:10px;
+	-webkit-box-shadow: 2px 2px 26px 0px rgba(166,166,166,1);
+	-moz-box-shadow: 2px 2px 26px 0px rgba(166,166,166,1);
+	box-shadow: 2px 2px 26px 0px rgba(166,166,166,1);
+}
+
+.contacto button{
+	border:none;
+	background-color:white;
+	font-size: 2em;
+	font-weight: bold;
+	margin-left:20px;
+	width:68.5%;
+	height: 50px;
+	display:block;
+	margin:1em 20px;
+}
+
+.logo-header{
+	display:none;
+}
+
+.grnd{
+	display:none;
+}
+
+.logo-hedaer{
+	margin: 10px 0 0 2%;
+}
+
+.contenedor-fieldset{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+
+	body{
+		font-size: 12px;
+	}
+	.media ul li a img{
+		width: 30px;
+		height: 30px;
+	}
+	.media ul li{
+		margin:5px 7px;
+	}
+
+}
+
+@media (min-width:650px) {
+
+	.boton-reg, .icono-menu{
+		display: inline-block;
+		font-size: 1.2em;
+		float:left;
+		width: 33%;
+		margin:0;
+	}
+	.boton-login{
+		display: inline-block;
+	}
+
+	.boton-reg{
+		float:right!important;
+	}
+
+	.icono-menu{
+		font-size: 1.6em;
+		position: static;
+	}
+	.busqueda{
+		width: 60%;
+	}
+	.header-links{
+		float:right;
+		width: 40%;
+		text-align: center;
+	}
+
+	.header-links ul{
+		margin: 0;
+		width: 50%;
+		padding: 0;
+		list-style: none;
+		float: left;
+		height: 100%;
+	}
+
+	.header-links ul li a{
+		color: white;
+		text-decoration: none;
+		line-height: 50px;
+		margin-left: 1.5%;
+		font-weight: bolder;
+		font-size: .9em;
+	}
+
+	.inventario{
+		text-decoration: underline!important;
+	}
+}
+
+@media (min-width: 960px){
+	.rutas{
+		clear: both;
+		position: absolute;
+		bottom: 0px;
+		text-align: center;
+		width: 100%;
+		max-width: 1600px;
+		padding: 0;
+		border-top: 2px solid white;
+	}
+	.rutas ul{
+		list-style: none;
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.rutas ul li{
+		display: inline-block;
+		color: white;
+		width: 20%;
+		height: 100%;
+	}
+
+	.rutas a{
+		text-decoration: none;
+		color: white;
+		font-size: 1.2em;
+		display: inline-block;
+		width: 100%;
+		padding: 10px;
+		margin: 0px;
+		height: 50px;
+	}
+
+	.rutas a:hover{
+		background-color: white;
+		color:black;
+	}
+
+	.media img{
+		width: 40px;
+		height: 40px;
+	}
+
+	.grnd{
+		display:block;
+	}
+	.encabezado{
+		height: 150px;
+	 }
+	form p{
+		display:block;
+		margin: 10px 0 0 0;
+		color:white;
+		font-size: 1.5em;
+		text-align: center;
+	}
+	.busqueda input{
+	padding:20px;
+ 	height: 50px;
+	margin-left:0px;
+
+ }
+
+ .busqueda form{
+	 float:right;
+	width: 80%;
+ }
+
+ .busqueda button{
+  	height: 50px;
+ }
+
+	.icono-menu{
+		display:none;
+	}
+
+	.busqueda{
+		width: 80%;
+	}
+
+.boton-reg{
+		height: 100%;
+		vertical-align: middle;
+		line-height: 100px;
+		text-align: center;
+		float: left;
+		width: 50%;
+		font-size: 1em;
+		display: block;
+	}
+
+	.boton-login{
+
+	}
+
+	.header-links{
+		float:right;
+		width: 20%;
+		margin: 0;
+		height: 100px;
+	}
+
+	.logo-header{
+		display:inline;
+		margin: 10px 0 0 3%;
+		width: 150px;
+		height: 60px;
+	}
+	  .contenedor-imagen-header, .contenedor-titulo-header{
+		margin-top: 200px;
+	}
+  .contenedor-imagen-header{
+		display:table;
+	}
+	.descripcion-titulo{
+		width: 200px;
+		margin: 0 auto;
+	}
+
+	.contenedor-titulo-header h1{
+		font-size: 4em;
+	}
+
+	.contenedor-titulo-header p{
+		font-size: 1.5em;
+	}
+
+	.contenedor-imagen-header img{
+		width: 410px;
+		height: 240px;
+		display: table-cell;
+    vertical-align: middle;
+		margin-top:0 ;
+		margin-bottom: 70px;
+	}
+
+	header{
+		margin-bottom: 50px;
+	}
+footer{
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+	}
+
+	footer nav li{
+		font-size: 1.6em;
+	}
+
+	.about{
+		font-size:17px;
+		padding-left:50px;
+	}
+
+	.media{
+		font-size: 17px;
+    	padding-left: 50px;
+	}
+
+	.media ul li a img{
+		width: 50px;
+		height: 50px;
+	}
+
+	.contacto{
+		font-size: 16px;
+	}
+	.contenido{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.contenido-encabezado{
+		width: 100%;
+	}
+
+
+}

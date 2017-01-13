@@ -1,0 +1,155 @@
+ .link-registrar{
+  margin-bottom: 20px;
+ }
+
+ .datos{
+   padding:25px;
+   border:none;
+   margin:0 auto 20px;
+   border-radius: 10px;
+   width: 80%;
+   box-shadow: 5px 5px 26px 0px rgba(166,166,166,1);
+ }
+
+h1{
+  text-align: center;
+  font-size: 4em;
+  margin-top: 220px;
+}
+
+.error{
+  color:red;
+  font-size: 1em;
+  text-align: left;
+}
+
+.email,
+.password
+{
+  text-align: center;
+  display:block;
+  margin: 10px auto;
+  border-radius: 2px;
+  line-height: 25px;
+  border:2px solid rgba(128,128,128,0.28);
+  width: 100%;
+}
+
+p{
+  margin:0;
+  font-size: 1.2em;
+}
+
+label{
+  font-size: 1.7em;
+  display:block;
+  width: 80%;
+  margin: 15px auto;
+
+}
+
+.checks{
+  margin:10px 0 0 0;
+  display: block;
+  float:left;
+  width: 10%;
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(2);
+}
+
+.susc-datos{
+  float:right;
+  width:90%;
+}
+
+.susc{
+  overflow:hidden;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+h6{
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.clear{
+  clear:both;
+}
+
+.mantener{
+  font-size: 1.2em;
+}
+
+form p{
+  color:black;
+}
+
+.continuar-boton{
+  display:block;
+  margin:15px auto 30px;
+  font-size: 1.3em;
+  text-decoration: none;
+  color:inherit;
+  padding:5px;
+  border:1px solid rgba(128,128,128,0.68);
+}
+
+.logeo-redes{
+  overflow:hidden;
+}
+
+
+.logeo-redes img{
+  float:left;
+  width:44%;
+  margin:0 3%;
+  border-radius: 20px;
+}
+
+.logeo-redes p{
+  font-size: 1.5em;
+}
+
+
+@media (min-width: 400px){
+  .logeo-redes img{
+    width:30%;
+    margin:0 10%;
+    margin-top: 20px;
+  }
+  .continuar-boton{
+    width:40%;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .datos{
+    width:50%;
+  }
+
+  .logeo-redes{
+    text-align: center;
+  }
+
+  .logeo-redes img{
+    width:30%;
+    margin:0 10%;
+    padding:15px;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .logeo-redes img{
+    width:25%;
+    margin:0 12.5%;
+    margin-top: 20px;
+  }
+  .datos{
+    width:40%;
+  }
+}
